@@ -5,9 +5,10 @@
   "properties": {
     "sources": {
       "title": "RSS/URL surse",
+      "description": "Lista de feed-uri RSS sau pagini principale din presa românească; câte un URL pe linie.",
       "type": "array",
       "editor": "stringList",
-      "items": {
+      "items": { 
         "type": "string"
       },
       "default": [
@@ -20,33 +21,43 @@
     },
     "maxArticles": {
       "title": "Max articole",
+      "description": "Numărul maxim de articole pe care Actorul le va analiza într-un run.",
       "type": "integer",
-      "default": 60
+      "default": 60,
+      "minimum": 10,
+      "maximum": 200
     },
     "openaiModel": {
       "title": "Model OpenAI",
+      "description": "Numele modelului OpenAI folosit pentru selecție și generare text.",
       "type": "string",
       "default": "gpt-4o-mini"
     },
     "generateImages": {
       "title": "Generează imagini",
+      "description": "Dacă este true, Actorul va genera și imagini DALL·E pentru postări.",
       "type": "boolean",
       "default": false
     },
     "includeCTA": {
       "title": "Include CTA",
+      "description": "Adaugă textul de call‑to‑action la finalul fiecărei postări.",
       "type": "boolean",
       "default": true
     },
     "brandCTA": {
       "title": "Text CTA",
+      "description": "Fraza CTA ce se adaugă la finalul postării dacă includeCTA = true.",
       "type": "string",
       "default": "Dacă vrei sprijin, programează o sesiune pe psiconcept.ro."
     },
     "postWordTarget": {
-      "title": "Cuvinte/ postare",
+      "title": "Cuvinte / postare",
+      "description": "Ținta aproximativă de cuvinte pentru fiecare postare Facebook generată.",
       "type": "integer",
-      "default": 150
+      "default": 150,
+      "minimum": 80,
+      "maximum": 220
     }
   },
   "required": []
