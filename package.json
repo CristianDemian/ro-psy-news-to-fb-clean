@@ -1,0 +1,12 @@
+{
+  "name": "ro-psy-news-to-fb",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "apify": "^3.1.9",
+    "axios": "^1.7.2",
+    "fast-xml-parser": "^4.4.1",
+    "dayjs": "^1.11.11",
+    "p-limit": "^5.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ro-psy-news-to-fb-clean",
+  "defaultDatasetId": "news",
+  "defaultKeyValueStoreId": "OUTPUT",
+  "defaultRequestQueueId": "queue"
+}

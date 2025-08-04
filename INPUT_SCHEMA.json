@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "title": "RO Psy News → FB Content",
+  "type": "object",
+  "properties": {
+    "sources": {
+      "title": "RSS/URL surse",
+      "type": "array",
+      "editor": "stringList",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "https://www.hotnews.ro/rss",
+        "https://www.digi24.ro/rss",
+        "https://www.libertatea.ro/rss",
+        "https://spotmedia.ro/rss",
+        "https://www.g4media.ro/feed"
+      ]
+    },
+    "maxArticles": {
+      "title": "Max articole",
+      "type": "integer",
+      "default": 60
+    },
+    "openaiModel": {
+      "title": "Model OpenAI",
+      "type": "string",
+      "default": "gpt-4o-mini"
+    },
+    "generateImages": {
+      "title": "Generează imagini",
+      "type": "boolean",
+      "default": false
+    },
+    "includeCTA": {
+      "title": "Include CTA",
+      "type": "boolean",
+      "default": true
+    },
+    "brandCTA": {
+      "title": "Text CTA",
+      "type": "string",
+      "default": "Dacă vrei sprijin, programează o sesiune pe psiconcept.ro."
+    },
+    "postWordTarget": {
+      "title": "Cuvinte/ postare",
+      "type": "integer",
+      "default": 150
+    }
+  },
+  "required": []
+}

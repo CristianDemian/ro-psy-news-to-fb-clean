@@ -1,0 +1,1 @@
+# RO Psy News to FB (clean)\n\nUn actor simplu Apify care extrage știri din RSS, selectează 3 cu potențial psihologic și generează postări Facebook.
